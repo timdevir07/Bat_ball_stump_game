@@ -1,0 +1,20 @@
+body h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style: inherit;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+button{
+  cursor: pointer;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if_else_game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bat-Ball Stump Game</h1>
+  <div class="container">
+  <section>
+    <button onclick="console.log('You select to Stump');
+    let randomNumber=Math.floor(Math.random()*3); 
+    let userchs='Stump';
+    let computerChoice;
+    let rsltmsg;
+    if(randomNumber>0 && randomNumber<=1){
+      computerChoice='Bat';
+    }
+    else if(randomNumber>1 && randomNumber<=2){
+      computerChoice='Ball';
+    }
+    else{
+      computerChoice='Stump';
+    }
+    console.log(`Computer Chose to ${computerChoice}`);
+    if(computerChoice==='Ball'){
+      rsltmsg='Computer Won...';
+    }
+    else if(computerChoice==='Bat'){
+      rsltmsg='Computer Won...!';
+    }
+    else if(computerChoice==='Stump'){
+      rsltmsg='Point draw';
+    } 
+    alert(`You select to ${userchs} and ${rsltmsg}`);
+  ">Stump</button>
+  </section>
+  <section>
+    <button onclick="console.log('You Chosen the Bat First');
+    let randomNumber = Math.floor(Math.random() * 3); 
+    let computerChoice;
+    let userchs='Bat';
+    if (randomNumber > 0 && randomNumber <= 1) {
+      computerChoice = 'Bat';
+    }
+    else if (randomNumber > 1 && randomNumber <= 2) {
+      computerChoice = 'Ball';
+    }
+    else {
+      computerChoice = 'Stump';
+    }
+    console.log(`Computer Chose to ${computerChoice}`);
+    if (computerChoice === 'Bat') {
+      rsltmsg='Point Draw';
+    }
+    else if (computerChoice === 'Ball'){
+      rsltmsg='You Won.....';
+    }
+    else if (computerChoice === 'Stump') {
+      rsltmsg='Undefine result because Computer Chose to Stump';
+    }
+    alert(`Your choice is ${userchs} and ${rsltmsg}`);
+    ">BAT</button>
+  </section>
+  <section>
+    <button onclick="console.log('You Chosen the Ball First');
+    let randomNumber = Math.floor(Math.random() * 3); 
+    let computerChoice;
+    let userchs='Ball';
+    if (randomNumber > 0 && randomNumber <= 1) {
+      computerChoice = 'Bat';
+    }
+    else if (randomNumber > 1 && randomNumber <= 2) {
+      computerChoice = 'Ball';
+    }
+    else {
+      computerChoice = 'Stump';
+    }
+    console.log(`Computer Chose to ${computerChoice}`);
+    if (computerChoice === 'Ball') {
+      rsltmsg='Point Draw';
+    }
+    else if (computerChoice === 'Bat') { 
+      rsltmsg='Computer Won';
+    }
+    else { 
+      rsltmsg='You again Lost Because Computer Chose Stump...';
+    }
+    alert(`You chose to ${userchs} and ${rsltmsg}`);
+    ">Ball</button>
+  </section>
+</div>
+</body>
+</html>
